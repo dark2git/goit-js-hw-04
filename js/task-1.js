@@ -4,7 +4,7 @@ function isEnoughCapacity(products, containerSize) {
   for (const price of Object.values(products)) {
     sum += price;
   }
-  return containerSize > sum;
+  return containerSize >= sum;
 }
 
 console.log(isEnoughCapacity({ apples: 2, grapes: 3, carrots: 1 }, 8)); // true
